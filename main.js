@@ -22,19 +22,7 @@ var your_3d_tiles = viewer.scene.primitives.add(
         url: 'https://assets.cms.plateau.reearth.io/assets/71/e76732-4a56-4654-b0f4-c00b8d502f7a/14100_yokohama-shi_city_2023_citygml_1_op_bldg_3dtiles_14103_nishi-ku_lod1/tileset.json',
     })
 );
-/*
-var your_3d_tiles = viewer.scene.primitives.add(
-    new Cesium.Cesium3DTileset({
-        url: 'https://assets.cms.plateau.reearth.io/assets/71/e76732-4a56-4654-b0f4-c00b8d502f7a/14100_yokohama-shi_city_2023_citygml_1_op_bldg_3dtiles_14103_nishi-ku_lod1/tileset.json',
-    })
-);
-*/
-/*
-var your_3d_tiles = viewer.scene.primitives.add(
-    new Cesium.Cesium3DTileset({
-        url: 'https://assets.cms.plateau.reearth.io/assets/59/f36fe0-0de1-4e8b-bf17-2ae98a99a014/14100_yokohama-shi_city_2023_citygml_1_op_bldg_3dtiles_14104_naka-ku_lod2/tileset.json',
-    })
-);*/
+
 
 // 横浜市の初期カメラ位置設定
 viewer.camera.flyTo({
