@@ -18,7 +18,8 @@ viewer.scene.imageryLayers.addImageryProvider(imageProvider);
 // 3D Tilesデータの参照
 var your_3d_tiles = viewer.scene.primitives.add(
     new Cesium.Cesium3DTileset({
-        url: 'https://plateau.geospatial.jp/main/data/3d-tiles/bldg/14100_yokohama/low_resolution/tileset.json',
+        //url: 'https://plateau.geospatial.jp/main/data/3d-tiles/bldg/14100_yokohama/low_resolution/tileset.json',
+         url: 'tileset.json',
     })
 );
 
