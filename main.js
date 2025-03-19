@@ -22,6 +22,16 @@ var your_3d_tiles = viewer.scene.primitives.add(
     })
 );
 
+your_3d_tiles.readyPromise
+    .then(function(tileset) {
+        console.log('3D Tilesの読み込みに成功しました');
+        // 必要に応じてカメラを調整
+        viewer.zoomTo(tileset);
+    })
+    .catch(function(error) {
+        console.error('3D Tilesの読み込みに失敗しました:', error);
+    });
+
 // 横浜市の初期カメラ位置設定
 viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(139.6300, 35.3500, 7000.0),  // 初期位置
