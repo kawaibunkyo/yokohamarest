@@ -16,17 +16,19 @@ var imageProvider = new Cesium.UrlTemplateImageryProvider({
 viewer.scene.imageryLayers.addImageryProvider(imageProvider);
 
 // 3D Tilesデータの参照
-/*var your_3d_tiles = viewer.scene.primitives.add(
+var your_3d_tiles = viewer.scene.primitives.add(
     new Cesium.Cesium3DTileset({
-        url: 'https://plateau.geospatial.jp/main/data/3d-tiles/bldg/14100_yokohama/low_resolution/tileset.json',
+        //url: 'https://plateau.geospatial.jp/main/data/3d-tiles/bldg/14100_yokohama/low_resolution/tileset.json',
+        url: 'https://assets.cms.plateau.reearth.io/assets/71/e76732-4a56-4654-b0f4-c00b8d502f7a/14100_yokohama-shi_city_2023_citygml_1_op_bldg_3dtiles_14103_nishi-ku_lod1/tileset.json',
     })
-);*/
-
+);
+/*
 var your_3d_tiles = viewer.scene.primitives.add(
     new Cesium.Cesium3DTileset({
         url: 'https://assets.cms.plateau.reearth.io/assets/71/e76732-4a56-4654-b0f4-c00b8d502f7a/14100_yokohama-shi_city_2023_citygml_1_op_bldg_3dtiles_14103_nishi-ku_lod1/tileset.json',
     })
 );
+*/
 /*
 var your_3d_tiles = viewer.scene.primitives.add(
     new Cesium.Cesium3DTileset({
