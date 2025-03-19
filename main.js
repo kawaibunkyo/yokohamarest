@@ -34,6 +34,12 @@ var your_3d_tiles = viewer.scene.primitives.add(
     })
 );
 
+var your_3d_tiles = viewer.scene.primitives.add(
+    new Cesium.Cesium3DTileset({
+        url: 'https://plateau.geospatial.jp/main/data/3d-tiles/bldg/14100_yokohama/low_resolution/tileset.json',
+         })
+);
+
 // 横浜市の初期カメラ位置設定
 viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(139.6300, 35.3500, 7000.0),  // 初期位置
